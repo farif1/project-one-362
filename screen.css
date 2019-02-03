@@ -11,7 +11,9 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html {
   font-size: 1.125em; /* 18px / 16px = 1.125em */
   line-height: 1.2222222222222em; /* 22px / 18 px = 1.2222222222222em */
-  padding: 1.2222222222222em; /* 22px / 18 px = 1.2222222222222em */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0 1em;
+  background-color: #f2f2f2;
 }
 
 h1 {
@@ -22,4 +24,6 @@ h1 {
 
 .catchline{
   text-align: center;
+  font-style: italic;
+  padding-bottom: 0.6111111em; /* 11px / 18px = 0.6111111em */
 }
