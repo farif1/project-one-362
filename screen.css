@@ -26,8 +26,18 @@ p {
   padding-bottom: 0.6111111em; /* 11px / 18px = 0.6111111em */
 }
 
-.catchline{
+.catchline {
   text-align: center;
   font-style: italic;
   padding-bottom: 0.6111111em; /* 11px / 18px = 0.6111111em */
+}
+
+@media screen and (min-width: 400px) {
+  form li {
+    display: flex;
+  }
+
+  label {
+    width: 33%;
+  }
 }
