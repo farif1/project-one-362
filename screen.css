@@ -17,5 +17,9 @@ html {
 h1 {
   font-size: 1.5em; /* 27px / 18px = 1.5em */
   line-height: 1.83333333em; /* 33px / 18 px = 1.83333333em */
-  padding-bottom: 0.6111111em; /* 11px / 18px = 0.6111111em */
+  text-align: center;
+}
+
+.catchline{
+  text-align: center;
 }
