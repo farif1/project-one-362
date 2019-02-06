@@ -22,6 +22,13 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  font-size: 1.222em; /* 22px / 18px = 1.222em */
+  line-height: 1.66666667em; /* 30px / 18px = 1.66666667em */
+  padding-bottom: 0.6111111em; /* 11px / 18px = 0.6111111em */
+  padding-top: 0.6111111em; /* 11px / 18px = 0.6111111em */
+}
+
 p {
   padding-bottom: 0.6111111em; /* 11px / 18px = 0.6111111em */
 }
