@@ -12,25 +12,26 @@ html {
   font-size: 1.125em; /* 18px / 16px = 1.125em */
   line-height: 1.2222222222222em; /* 22px / 18 px = 1.2222222222222em */
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 0 1em;
+  padding: 1.2222222222222em; /* 22px / 18 px = 1.2222222222222em */;
   background-color: #cef3f3;
 }
 
 h1 {
-  font-size: 1.5em; /* 27px / 18px = 1.5em */
-  line-height: 1.83333333em; /* 33px / 18 px = 1.83333333em */
+  font-size: 1.57129444em; /* 28.833px / 18px = 1.57129444em */
+  line-height: 1.83333333em; /* 44px / 18 px = 1.83333333em */
   text-align: center;
 }
 
 h2 {
-  font-size: 1.222em; /* 22px / 18px = 1.222em */
+  font-size: 1.26561111em; /* 22.781px / 18px = 1.26561111em */
   line-height: 1.66666667em; /* 30px / 18px = 1.66666667em */
-  padding-bottom: 0.6111111em; /* 11px / 18px = 0.6111111em */
-  padding-top: 0.6111111em; /* 11px / 18px = 0.6111111em */
+  padding-bottom: 0.61111111em; /* 11px / 18px = 0.61111111em */
 }
 
 p {
-  padding-bottom: 0.6111111em; /* 11px / 18px = 0.6111111em */
+  font-size: 0.61805556em; /* 11.125px / 18px = 0.61805556em */
+  line-height: 1em; /* 16.5px / 18px = 0.91666667em */
+  padding-bottom: 1.2222222222222em; /* 22px / 18 px = 1.2222222222222em */;
 }
 
 form, label{
@@ -41,4 +42,33 @@ form, label{
   text-align: center;
   font-style: italic;
   padding-bottom: 0.6111111em; /* 11px / 18px = 0.6111111em */
+}
+
+/**
+* A quick baseline grid overlay using css+svg.
+* Inspired by [Basehold.it](https://basehold.it/).
+* @author leshido
+*/
+
+body.g {
+    position: relative;
+}
+
+body.g::after {
+    /* Change the `height` parameter here to match your base line-height. */
+    background: url('data:image/svg+xml;utf8,<svg height="27" width="1" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="0.5" style="fill:rgba(0, 255, 0, 0.8)" /></svg>') repeat top left;
+
+    content: "";
+    display: block;
+    pointer-events: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    position: absolute;
+}
+
+body.g:active::after {
+    display: none;
 }
