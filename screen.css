@@ -34,8 +34,19 @@ p {
   padding-bottom: 1.2222222222222em; /* 22px / 18 px = 1.2222222222222em */;
 }
 
-form, label{
+input, label{
   display: block;
+  box-sizing: border-box;
+}
+
+input {
+  padding: 1.2222222222222em; /* 22px / 18 px = 1.2222222222222em */;
+  margin: 0;
+  font-size: inherit;
+  line-height: inherit;
+  border: 0;
+  outline: 0;
+  width: 100%;
 }
 
 .catchline {
