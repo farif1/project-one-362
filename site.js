@@ -3,8 +3,10 @@
     return;
   }
 
-  document.addEventListener('DOMContentLoaded', function(){
+  var submit = document.querySelector('#submit');
 
+  document.addEventListener('DOMContentLoaded', function(){
+    submit.setAttribute('disabled', 'disabled');
   });
 
   var tel_input = document.querySelector('#telephone');
@@ -15,7 +17,10 @@
     console.log('The value of #telephone is', this.value);
     var clean_number = this.value.replace(/\D/g,'');
     var actual_number = clean_number.replace(/^1/,'');
-    
+    if (actual_number.length === 10) {
+      submit.removeAttribute('disabled');
+    }
+
   });
 
 }());
