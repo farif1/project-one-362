@@ -1,11 +1,15 @@
 (function(){
-if (!('querySelector' in document && 'addEventListener' in document)) {
-  return;
-}
+  if (!('querySelector' in document && 'addEventListener' in document)) {
+    return;
+  }
 
-document.addEventListener('DOMContentLoaded', function(){
-  console.log('DOM is loaded');
-  var heading_text = document.querySelector('#content h1').innerText
-  console.log('The heading text is:' heading_text);
-});
+  document.addEventListener('DOMContentLoaded', function(){
+
+  });
+
+  var tel_input = document.querySelector('#telephone');
+  tel_input.addEventListener('focus', function(){
+    console.log('The label is in focus');
+  });
+
 }());
