@@ -54,6 +54,10 @@ input[type="tel"] {
   background-color: rgba(67,176,183,1.0);
 }
 
+input[type="tel"]:focus {
+  background-color: #EEE;
+}
+
 input[type="text"] {
   margin-bottom: 0.61111111em; /* 11px / 18px = 0.61111111em */
   background-color: rgba(67,176,183,1.0);
@@ -65,6 +69,10 @@ input[type="email"] {
 }
 
 input[type="submit"] {
+  background-color: rgba(67,176,183,8.0);
+}
+
+input[type="submit"]:disabled {
   background-color: rgba(67,176,183,0.3);
 }
 
