@@ -49,25 +49,19 @@ input {
   width: 100%;
 }
 
-input[type="tel"]:focus,
 input[type="text"]:focus,
 input[type="email"]:focus {
   background-color: rgba(0,255,255,1);
 }
 
 input[type="text"],
-input[type="email"],
-input[type="tel"] {
+input[type="email"] {
   margin-bottom: 0.61111111em; /* 11px / 18px = 0.61111111em */
   background-color: rgba(67,176,183,1);
 }
 
 input[type="submit"] {
   background-color: rgba(67,176,183,8);
-}
-
-input[type="submit"]:disabled {
-  background-color: rgba(67,176,183,0.3);
 }
 
 .catchline {
