@@ -20,3 +20,8 @@
         return false;
     }
   }
+
+  function validate_email(value) {
+    var email = whitespace(value);
+    return validate(email,/^[^@\s]+@[^@\s]+$/g);
+  }
