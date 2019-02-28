@@ -27,3 +27,19 @@
   }
 
   submit.setAttribute('disabled','disabled');
+
+  document.addEventListener('DOMContentLoaded',function() {
+    var form = document.querySelector('#form');
+    var submit = document.querySelector('#submit');
+    var input_email = document.querySelector('#email');
+
+    form.addEventListener('keyup',function() {
+      if (validate_email(input_email.value)) {
+        submit.removeAttribute('disabled');
+      } else {
+        submit.setAttribute('disabled','disabled');
+      }
+    });
+  });
+
+}());
