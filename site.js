@@ -25,3 +25,5 @@
     var email = whitespace(value);
     return validate(email,/^[^@\s]+@[^@\s]+$/g);
   }
+
+  submit.setAttribute('disabled','disabled');
