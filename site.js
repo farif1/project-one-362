@@ -36,6 +36,7 @@
     form.addEventListener('keyup',function() {
       if (validate_email(input_email.value)) {
         submit.removeAttribute('disabled');
+        document.querySelector('#submit').style.cursor = "pointer";
       } else {
         submit.setAttribute('disabled','disabled');
       }
